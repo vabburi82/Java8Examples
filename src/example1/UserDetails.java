@@ -16,6 +16,6 @@ public class UserDetails {
 		System.out.println("User Details Entered ::");
 		System.out.println("User Name :: " + name);
 		System.out.println("User Phone :: "+ phone);
-		System.out.println("User Email :: "+ emailId );
+		System.out.println("User Email :: "+ emailId);
 	}
 }
