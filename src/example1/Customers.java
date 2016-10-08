@@ -14,14 +14,14 @@ public static void main(String[] args)
     	{
         System.out.println("\nEnter Customer [ " + (i + 1) + " ] details ::");
         
-        System.out.println("Enter the name: ");
-        String Name = input.nextLine();
+        System.out.print("Enter the name: ");
+        String Name = input.next();
         
-        System.out.println("Enter the Email: ");
-        String Email = input.nextLine();
+        System.out.print("Enter the Email: ");
+        String Email = input.next();
         
-        System.out.println("Enter the PhoneNo: ");
-        String phone = input.nextLine();
+        System.out.print("Enter the PhoneNo: ");
+        String phone = input.next();
         
         System.out.println("User Details Entered are ::\n");
 		System.out.println("User Name :: "+ Name);
