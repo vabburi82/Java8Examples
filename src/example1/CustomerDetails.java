@@ -20,5 +20,5 @@ public class CustomerDetails {
 			System.out.println("User Phone :: "+ phone);
 			System.out.println("User Email :: "+ emailId);
 		}
-	}	
+	}
 }

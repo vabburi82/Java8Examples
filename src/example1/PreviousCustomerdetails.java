@@ -1,13 +1,13 @@
 package example1;
-import java.util.Arrays;
 import java.util.Scanner;
-public class Details {
-	public static void main(String[] args)
+import java.io.*;
+public class PreviousCustomerdetails {
+	public static void main(String[] args)throws IOException
 	{
 		int i;
-		String name;
-		String email;
-		String phone;
+		String name = null;
+		String email = null;
+		String phone = null;
 
 		Scanner input =new Scanner(System.in);
 		System.out.println("Welcome to Costumer Deatails page");
@@ -16,9 +16,8 @@ public class Details {
 		String userReply=input.next();
 		
 		for (i = 0; "Y".equalsIgnoreCase(userReply); i++)
-    	{
-    	
-		        System.out.println("\nEnter Customer [ " + ( i) + " ] details ::");
+    		{
+		        System.out.println("\nEnter Customer [ " + (i) + " ] details ::");
 		        
 		        System.out.print("Enter the name: ");
 		        name = input.next();
@@ -36,7 +35,7 @@ public class Details {
 				names[i].name=name;
 				names[i].email=email;
 				names[i].phone=phone;
-    	}
+    		}
 		
 		 System.out.println("\nUser Details Entered are ::\n");
 		 
@@ -48,6 +47,6 @@ public class Details {
 		    System.out.println("================================");
 		
 		 }
-
+		
 	}
 }
