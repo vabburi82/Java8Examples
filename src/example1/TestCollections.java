@@ -1,7 +1,7 @@
 package example1;
 import java.io.*;
 import java.util.*;
-public class TestRead
+public class TestCollections
 {
 	
 public static void main(String[] args) throws IOException
@@ -22,7 +22,17 @@ public static void main(String[] args) throws IOException
 				String phone;
 				Scanner input =new Scanner(System.in);
 				System.out.println("Welcome to Costumer Deatails page");
-			    Customer names[]=new Customer[1000];
+				
+			   // Customer names[]=new Customer[1000];
+				List<String> =toList(String[] array) {
+
+				    List<String> list = new ArrayList(array.length);
+
+				    list.addAll(Arrays.asList(array));
+
+				    return list;
+				}
+
 			    System.out.println("Are you creating a record:");
 				String userReply=input.next();
 				
@@ -80,4 +90,9 @@ public static void main(String[] args) throws IOException
 		         line=br.readLine();
 		         }
       }
+
+private static List<String> toList(Object object) {
+	// TODO Auto-generated method stub
+	return null;
+}
 }

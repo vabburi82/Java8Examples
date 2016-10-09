@@ -1,5 +1,4 @@
 package example1;
-import java.util.Arrays;
 import java.util.Scanner;
 public class Details {
 	public static void main(String[] args)
