@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+    "http://struts.apache.org/dtds/struts-2.5.dtd">
+    <struts>
+    <constant name="struts.mapper.action.prefix.enabled" value="true"/>
+    <constant name="struts.custom.i18n.resources" value="ApplicationResources" />
+    <package name="default" namespace="/" extends="struts-default">
+    
+    <action name="save" class="org.abburi.practice.action.SaveAction" method="addCustomer">
+     <result name="success" type="redirect">listCustomers</result>
+     <result name="input">/index.jsp</result>
+    </action>
+    <action name="listCustomers" class="org.abburi.practice.action.LoadCustomersAction" method="list">
+     <result name="success">/list.jsp</result>
+     <result name="error">/error.jsp</result>
+    </action>
+     <action name="deleteCustomer" class="org.abburi.practice.action.DeleteCustomerAction" >
+     <result name="success" type="redirect">listCustomers</result>
+     <result name="error">/error.jsp</result>
+    </action>
+     <action name="editCustomer" class="org.abburi.practice.action.EditAction" method="editCustomer">
+     <result name="success" >/edit.jsp</result>
+     <result name="error">/error.jsp</result>
+    </action>
+    <action name="updateCustomer" class="org.abburi.practice.action.UpdateCustomerAction" method="updateCustomer">
+     <result name="success" type="redirect">listCustomers</result>
+     <result name="error">/error.jsp</result>
+     <result name="input">/edit.jsp</result>
+    </action>
+    </package>
+    </struts>
